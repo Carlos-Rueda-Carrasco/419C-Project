@@ -22,3 +22,7 @@ ratings = post.find(class_='tooltip-container')
 
 print(ratings)
 
+with open('dataStored.csv', 'w') as my_file:
+    writer = writer(my_file)
+    header = ['Title', 'Star Rating', 'Students Enrolled', 'Date Updated', 'Price', 'Course Hours']
+    writer.writerow(header)
